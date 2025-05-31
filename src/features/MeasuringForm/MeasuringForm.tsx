@@ -8,9 +8,9 @@ export const InputForm = () => {
     <>
       {!result && 
       <Box sx={{display: "flex", flexDirection: "column", gap:2, margin: 2}}>
-      <TextField label="Высота брика" value={inputs.brickHeight} onChange={handleChange("brickHeight")} />
-      <TextField label="Желаемая фуга" value={inputs.minGap} onChange={handleChange("minGap")} />
-      <TextField label="Высота стены" value={inputs.wallHeight} onChange={handleChange("wallHeight")} />
+      <TextField label="Высота брика в см." value={inputs.brickHeight} onChange={handleChange("brickHeight")} />
+      <TextField label="Желаемая фуга в см." value={inputs.minGap} onChange={handleChange("minGap")} />
+      <TextField label="Высота стены в м." value={inputs.wallHeight} onChange={handleChange("wallHeight")} />
       <Button onClick={calculate}>Рассчитать</Button>
       </Box>}
     </>
